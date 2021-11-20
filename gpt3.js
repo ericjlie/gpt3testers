@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 const GPT3_URL = 'https://api.openai.com/v1/engines/davinci/completions'
 
-module.exports = async function completion (prompt, stopSequence) {
+module.exports = async function completion (prompt, stopSequence, tokens, temp = '.7') {
   const response = await fetch(GPT3_URL, {
     method: 'POST',
     headers: {
@@ -11,7 +11,8 @@ module.exports = async function completion (prompt, stopSequence) {
     body: JSON.stringify({
       prompt,
       stop: stopSequence,
-      max_tokens: 300
+      max_tokens: tokens,
+      temperature: temp
     })
   })
 
