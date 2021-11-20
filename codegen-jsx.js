@@ -27,7 +27,7 @@ async function run () {
     CODE_TEMPLATE + codeDescription + '\n[toCode]',
     STOP_SEQUENCE,
     200,
-    0
+    0.08
   )
 
 
