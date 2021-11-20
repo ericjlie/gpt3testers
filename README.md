@@ -3,7 +3,7 @@ A couple of gpt3 testers that run in the terminal.
 
 ##How to use##
 
-To run a tester, navigate to it's directory and use the command:
+To run a tester, navigate to its directory and use the command:
 
 ```
 TOKEN=YOUR_API_TOKEN_HERE node JSFILENAME_HERE
