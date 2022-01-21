@@ -1,7 +1,9 @@
 # gpt3testers
 A couple of gpt3 testers that run in the terminal.
 
-##How to use##
+Contains a JSX snippet generator, simple completion generator, and a superhero generator.
+
+## How to use 
 
 To run a tester, navigate to its directory and use the command:
 
